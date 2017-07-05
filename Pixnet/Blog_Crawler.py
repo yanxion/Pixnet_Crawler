@@ -24,7 +24,6 @@ if __name__ == '__main__':
     #Pixnet.Blog_Content.Blog_Content_Crawler(Web_url)
 
 
-
     for i in Pixnet_Type.Pixnet_Type_url_Crawler("https://www.pixnet.net/blog"):
         for j in Blog_Rank_List_url.Blog_Type_List_Url(i):
             #meta
