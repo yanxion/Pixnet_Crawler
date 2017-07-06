@@ -64,6 +64,8 @@ if __name__ == '__main__':
             except:
                 print "error."
 
+
+    """
     sql = "SELECT blog_url FROM blog_meta;"
     cursor.execute(sql)
     for i in cursor.fetchall():
@@ -88,15 +90,20 @@ if __name__ == '__main__':
 
 
     """
+    """
     Web_url = "http://smilejean.pixnet.net/blog/post/9860618"
     print "!!!!!!1"
-    Data = Blog_Meta.Blog_Meta_Crawler(Web_url)
-    print Data
+    try:
+        Data = Blog_Meta.Blog_Meta_Crawler(Web_url)
+        print Data
+    except:
+        raise Exception
+    """
     #cursor.execute(Insert_Content, Data)
     #db.commit()
 
     #Data = Pixnet.Blog_Meta.Blog_Meta_Crawler(Web_url)
-    """
+
 
 
     db.close()

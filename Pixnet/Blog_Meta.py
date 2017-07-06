@@ -10,8 +10,7 @@ def Blog_Meta_Crawler(Web_url):
 
     Blog_Name =  res('div#banner').find('a').eq(0).text()
 
-    Blog_Url = Web_url[:Web_url.find('pixnet.net/blog/')+16]
-
+    Blog_Url = Web_url[:Web_url.find('/',Web_url.find('//')+2)] + "/blog/"
 
     Data.append(Blog_Domain)
     Data.append(Blog_Account)
